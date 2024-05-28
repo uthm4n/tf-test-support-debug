@@ -1,12 +1,12 @@
 output "something" {
-   value = templatefile("this/is/a/deeply/nested/folder/something.json", {
+   value = templatefile("./this/is/a/deeply/nested/folder/something.json", {
     chessboard = 8
    })
 }
 
 
 output "rendered" {
-  value = templatefile("this/shallow_nesting_also_doesnt_work.json", {
+  value = templatefile("./this/shallow_nesting_also_doesnt_work.json", {
     age = 1
   })
 }
